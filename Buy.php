@@ -6,7 +6,7 @@ $rs2;
 $rs3;
 $rs4;
 $rs5;
-$conid = $_POST ["conid"];
+$conid = $_POST["conid"];
 $seat = '';
 
 $seatAll = 288;
