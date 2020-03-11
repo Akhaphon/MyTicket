@@ -9,7 +9,6 @@ session_start ();
 	$currentDate = date("Y-m-d");
 
 	require_once __DIR__ . '/vendor/autoload.php';
-
 	$mpdf = new \Mpdf\Mpdf();
 
 
@@ -22,10 +21,12 @@ session_start ();
 	$sql = "INSERT INTO purchase(member_id, con_id, seat, price, price_status, confirm_date) VALUES (".$memberid.",".$conid.",'".$seat."',".$price.",'A','".$currentDate."')";
 	
 	if ($con->query ( $sql ) === TRUE) {
-		header("location:Home.php");
+		// header("location:Home.php");
+		// echo "inserted";
+	$mpdf->Output('payment/'.$memberid.'.pdf', \Mpdf\Output\Destination::DOWNLOAD);
 	}else{
-		
+
 	}
 
-$mpdf->Output();
+	header("location:Home.php");
 ?>
