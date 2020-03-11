@@ -649,7 +649,7 @@ select.list-dt:focus {
 	<div id="header">
 		<div>
 			<div id="logo">
-				<a href="Home.php"><img class="logo" src="images/logo5.png"
+				<a href="f.php"><img class="logo" src="images/logo5.png"
 					alt="LOGO"></a>
 			</div>
 			<ul id="navigation">
@@ -666,7 +666,7 @@ select.list-dt:focus {
 <!-- 						<a class="dropdown-item" href="purchase.php">Purchase history</a> -->
 					</div></li>
 				<li>
-					<form action="/MyTicketProject/login.php" id="logoutForm">
+					<form action="/MyTicketProject/logout.php" id="logoutForm">
 						<button type="submit" class="btn btn-danger text-align"
 							onclick="BuyTicket(this);">Logout</button>
 					</form>

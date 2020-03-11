@@ -9,6 +9,11 @@ if (! $_SESSION ["email"]) {
 	$rs1 = $con->query ( $sql );
 	$con->close ();
 }
+function destroySession(){
+	session_unset();
+	session_destroy();
+}
+
 ?>
 
 <!DOCTYPE html>

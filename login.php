@@ -1,4 +1,5 @@
 <?php
+error_reporting(~E_NOTICE);
 $res = $_GET["res"];
 // echo "Php".$res;
 ?>
